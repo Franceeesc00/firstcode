@@ -9,19 +9,22 @@ body {
 
 /* Style the header */
 .header {
-  background-color:yellow;
-  padding: 20px;
+  background-image: url('../img/header.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10% 20px;
   text-align: center;
+  color: whitesmoke;
 }
 
 .header h1{
   font-size: 60px;
+  font-family: Helvetica;
 }
 
-.header1{
-  font-size: 60px;
+.header p{
+  font-size: 40px;
 }
-
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -45,12 +48,38 @@ body {
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
-  float: left;
+
+.one-colum{
   width: 100%;
-  
+}
+.one-colum h1,
+.one-colum h2{
+text-align: center;
 }
 
+.two-column{
+  padding: 20px;
+  float: left;
+  width: 50%;
+}
+.three-column {
+  padding: 20px;
+  float: left;
+  width: 33.33%;
+}
+
+.three-column img {
+  width: 100%;
+}
+
+.three-column .desc {
+  padding: 10px;
+  text-align: center;
+}
+
+#cadetblue{
+  background-color: cadetblue;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -63,17 +92,5 @@ body {
   .column {
     width: 100%;
   }
-}
-.column h2{
-  color: red;
-  text-align: center
-}
-
-.gallery img {
-  width: 100%;
-}
-.gallery .desc {
-  padding: 15px;
-  text-align: center;
 }
 </style>
